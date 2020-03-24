@@ -13,6 +13,7 @@ router.post("/register", (req, res) => {
 
   Users.add(userInfo)
     .then(user => {
+     
       res.json(user);
     })
     .catch(err => res.send(err));
